@@ -22,7 +22,7 @@ package sdk_test
 import (
 	"testing"
 
-	"github.com/grafana-tools/sdk"
+	"github.com/rikimaru0345/sdk"
 )
 
 func TestAddTags(t *testing.T) {

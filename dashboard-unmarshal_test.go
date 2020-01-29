@@ -24,7 +24,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/grafana-tools/sdk"
+	"github.com/rikimaru0345/sdk"
 )
 
 func TestUnmarshal_NewEmptyDashboard26(t *testing.T) {
