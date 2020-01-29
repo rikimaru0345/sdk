@@ -18,15 +18,22 @@ package sdk
    ॐ तारे तुत्तारे तुरे स्व
 */
 
+// Org -
 type Org struct {
 	ID   uint   `json:"id"`
 	Name string `json:"name"`
 }
 
+// OrgUser -
+// updated according to:
+// https://grafana.com/docs/grafana/latest/http_api/org/#get-users-in-organization
 type OrgUser struct {
-	ID    uint   `json:"id"`
-	OrgId uint   `json:"orgId"`
-	Email string `json:"email"`
-	Login string `json:"login"`
-	Role  string `json:"role"`
+	OrgID         uint   `json:"orgId"`
+	ID            uint   `json:"userId"`
+	Email         string `json:"email"`
+	AvatarURL     string `json:"avatarUrl"`
+	Login         string `json:"login"`
+	Role          string `json:"role"`
+	LastSeenAt    string `json:"lastSeenAt"`
+	LastSeenAtAge string `json:"lastSeenAtAge"`
 }
